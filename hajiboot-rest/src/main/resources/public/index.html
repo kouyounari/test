@@ -4,19 +4,17 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html ng-app="myApp">
+<html ng-app="crudApp">
     <head>
         <title>Start AngularJS</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.6/angular.min.js"></script>
-        <script src="start.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.6/angular-route.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controller.js"></script>
     </head>
     <body>
-        <div ng-controller="CustomerCtrl">
-            <ul ng-repeat="customer in customers">
-                <li>{{customer.id}} {{customer.firstName}} {{customer.lastName}} </li>
-            </ul>
-        </div>
+        <div ng-view></div>
     </body>
 </html>

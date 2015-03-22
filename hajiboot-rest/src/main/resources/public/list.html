@@ -1,0 +1,12 @@
+<div ng-controller="CustomerCtrl">
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>名</td>
+        </tr>
+        <tr ng-repeat="customer in customers">
+            <td><a href="#/{{customer.id}}">{{customer.id}}</a></td>
+            <td>{{customer.firstName}}</td>
+        </tr>
+    </table>
+</div>
