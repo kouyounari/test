@@ -15,3 +15,9 @@ customerControllers.controller('CustomerDetailCtrl', function($scope, $http, $ro
         $scope.customer = data;
     });
 });
+customerControllers.controller('CustomerNewCtrl', function($scope, $http) {
+    $scope.save = function() {
+        var customer = $scope.customer;
+        $http.post('api/customer', customer);
+    }
+});

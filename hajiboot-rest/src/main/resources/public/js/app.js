@@ -12,6 +12,9 @@ crudApp.config(['$routeProvider',
         $routeProvider.when('/index.html', {
             templateUrl: 'list.html',
             controller: 'CustomerCtrl'
+        }).when('/new', {
+            templateUrl: '/new.html',
+            controller: 'CustomerNewCtrl'
         }).when('/:id', {
             templateUrl: '/detail.html',
             controller: 'CustomerDetailCtrl'
